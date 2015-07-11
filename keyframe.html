@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Background Colour With Css</title>
+	<style type="text/css">
+			#background {
+				height: 100%;
+				width: 100%;
+				animation: pulse 10s infinite;
+				position: relative;
+			}
+
+			#font {
+				font-family: Helvetica, sans-serif;
+				font-size: 60px;
+				animation: pulsa 10s infinite;
+				position: absolute;
+				bottom: 0;
+				right: 0;
+				left: 0;
+				top: 0;
+				text-align: center;
+			}
+
+
+			@keyframes pulse {
+				0% {
+					background-color: #2ecc71;
+				}
+				
+				25% {
+					background-color: #3498db;
+				}
+				
+				50% {
+					background-color: #9b59b6;
+				}
+				
+				75% {
+					background-color: #e74c3c;
+				}
+				
+				100% {
+					background-color: #e67e22;
+				}
+			}
+
+
+			@keyframes pulsa {
+				0% {
+					color: #27ae60;
+				}
+				25% {
+					color: #2980b9;
+				}
+				50% {
+					color: #8e44ad;
+				}
+				75% {
+					color: #ecf0f1;
+				}
+				100% {
+					color: #d35400;
+				}
+			}
+
+			html,body {
+				height: 100%;
+			}
+
+	</style>
+</head>
+<body>
+	<div id="background">
+		<div id="font">
+			<h1>Hello</h1>
+			<h2>Happy Fasting</h2>
+		</div>
+	</div>
+</body>
+</html>
